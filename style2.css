@@ -1,0 +1,54 @@
+body {
+      margin: 0;
+      padding: 0;
+      font-family: algerian, sans-serif;
+      background-image: url(phill.png);
+	  background-size: 40em;
+    text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 150vh;
+
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    #welcome-text {
+      font-size: 2.5em;
+      font-weight: bold;
+      color: brown;
+      opacity: 05;
+      transform: translateX(0%);
+      animation: slideIn 2s forwards ;
+    }
+
+    @keyframes slideIn {
+      0% {
+        opacity: 0;
+        transform: translateX(-100%);
+      }
+      100% {
+        opacity: 13;
+        transform: translateX(0);
+      }
+    }
+
+    #next-button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      color: white;
+      background-color: #007bff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #next-button:hover {
+      background-color: #0056b3;
+    }
+
+

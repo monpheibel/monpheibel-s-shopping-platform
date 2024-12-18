@@ -1,0 +1,249 @@
+/* General Styles */
+body {
+    font-family: 'castellar', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Light grey background */
+    color: #333;
+	justify-content: space-between;
+}
+
+header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header .logo a {
+    color: #fff;
+    font-size: 1.8em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header .search-container {
+    flex-grow: 1;
+    margin: 0 20px;
+    display: flex;
+}
+
+header .search-container input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+}
+
+header .search-container .search-btn {
+    padding: 10px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    color: #fff;
+    cursor: pointer;
+}
+
+header .icons span {
+    font-size: 1.5em;
+    margin-left: 10px;
+    cursor: pointer;
+    color: #fff;
+}
+
+nav.categories {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav.categories a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+nav.categories a:hover {
+    color: #ffd700; /* Gold */
+}
+
+.promo, .deals-section, .obsessions {
+    background-color: #e9ecef; /* Very light grey */
+    padding: 20px;
+    text-align: center;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.promo p, .deals-section p, .obsessions p {
+    color: #555;
+}
+
+.promo button, .deals-section .see-all-btn, .obsessions button {
+    padding: 10px 20px;
+    border: shadow;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.product img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.product .price {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #ffd700; /* Gold */
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Home Page Styles */
+.home header {
+    background-color: #FF4500; /* Orange header */
+}
+
+.home .search-container .search-btn {
+    background-color: #FF6347; /* Tomato button */
+}
+
+.home nav.categories {
+    background-color: #FF6347; /* Tomato background */
+}
+
+.home .promo h2, .home .deals-section h1, .home .obsessions h2 {
+    color: #FF6347; /* Tomato */
+}
+
+.home .promo button, .home .deals-section .see-all-btn, .home .obsessions button {
+    background-color: #FF6347; /* Tomato */
+}
+
+.home .promo button:hover, .home .deals-section .see-all-btn:hover, .home .obsessions button:hover {
+    background-color: #FF4500; /* Orange */
+}
+
+.home footer {
+    background-color: #FF4500; /* Orange footer */
+}
+
+/* Shop Page Styles */
+.shop header {
+    background-color: #32CD32; /* Lime Green header */
+}
+
+.shop .search-container .search-btn {
+    background-color: #228B22; /* Forest Green button */
+}
+
+.shop nav.categories {
+    background-color: #228B22; /* Forest Green background */
+}
+
+.shop .promo h2, .shop .deals-section h1, .shop .obsessions h2 {
+    color: #228B22; /* Forest Green */
+}
+
+.shop .promo button, .shop .deals-section .see-all-btn, .shop .obsessions button {
+    background-color: #228B22; /* Forest Green */
+}
+
+.shop .promo button:hover, .shop .deals-section .see-all-btn:hover, .shop .obsessions button:hover {
+    background-color: #006400; /* Dark Green */
+}
+
+.shop footer {
+    background-color: #32CD32; /* Lime Green footer */
+}
+
+/* About Page Styles */
+.about header {
+    background-color: #8A2BE2; /* Purple header */
+}
+
+.about .search-container .search-btn {
+    background-color: #6A0DAD; /* Darker Purple button */
+}
+
+.about nav.categories {
+    background-color: #6A0DAD; /* Darker Purple background */
+}
+
+.about .promo h2, .about .deals-section h1, .about .obsessions h2 {
+    color: #6A0DAD; /* Darker Purple */
+}
+
+.about .promo button, .about .deals-section .see-all-btn, .about .obsessions button {
+    background-color: #6A0DAD; /* Darker Purple */
+}
+
+.about .promo button:hover, .about .deals-section .see-all-btn:hover, .about .obsessions button:hover {
+    background-color: #4B0082; /* Indigo */
+}
+
+.about footer {
+    background-color: #8A2BE2; /* Purple footer */
+}
+
+/* Contact Page Styles */
+.contact header {
+    background-color: #FF1493; /* Deep Pink header */
+}
+
+.contact .search-container .search-btn {
+    background-color: #C71585; /* Medium Violet Red button */
+}
+
+.contact nav.categories {
+    background-color: #C71585; /* Medium Violet Red background */
+}
+
+.contact .promo h2, .contact .deals-section h1, .contact .obsessions h2 {
+    color: #C71585; /* Medium Violet Red */
+}
+
+.contact .promo button, .contact .deals-section .see-all-btn, .contact .obsessions button {
+    background-color: #C71585; /* Medium Violet Red */
+}
+
+.contact .promo button:hover, .contact .deals-section .see-all-btn:hover, .contact .obsessions button:hover {
+    background-color: #8B008B; /* Dark Magenta */
+}
+
+.contact footer {
+    background-color: #FF1493; /* Deep Pink footer */
+}
